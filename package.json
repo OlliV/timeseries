@@ -1,0 +1,20 @@
+{
+  "name": "@olliv/timeseries",
+  "version": "1.0.0",
+  "description": "Timeseries manipulation",
+  "repository": "OlliV/timeseries",
+  "files": ["index.js"],
+  "main": "index.js",
+  "dependencies": {
+    "split-array": "1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "timeseries"
+  ],
+  "author": "Olli Vanhoja <olli.vanhoja@gmail.com>",
+  "license": "ISC"
+}
