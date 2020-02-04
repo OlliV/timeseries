@@ -10,8 +10,9 @@ exports.downsample = function downsample(arr, bucketSize) {
 
 	// Calculate geometric mean of the timestamps
 	const timestamps = buckets.map((samples) => {
-		const prod = samples.reduce((acc, values) => acc * values[0], 1);
-		return Math.floor(Math.pow(prod, 1 / samples.length));
+		const t0 = samples[0][0];
+		const prod = samples.reduce((acc, values) => acc * (values[0] - t0), 1);
+		return Math.round(t0 + Math.pow(prod, 1 / samples.length));
 	});
 
 	const res = buckets.map((samples) => samples.reduce((avgs, values, _, { length }) => {
