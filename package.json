@@ -1,6 +1,6 @@
 {
   "name": "@olliv/timeseries",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Timeseries manipulation",
   "repository": "OlliV/timeseries",
   "files": ["index.js"],
