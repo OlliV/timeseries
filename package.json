@@ -3,18 +3,34 @@
   "version": "1.0.2",
   "description": "Timeseries manipulation",
   "repository": "OlliV/timeseries",
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
   "main": "index.js",
-  "dependencies": {
-    "split-array": "1.0.1"
+  "devDependencies": {
+    "@babel/core": "7.8.6",
+    "@babel/preset-env": "7.8.6",
+    "babel-jest": "25.1.0",
+    "jest": "25.1.0"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_ENV=test jest"
   },
   "keywords": [
-    "timeseries"
+    "timeseries",
+    "DSP",
+    "arrays"
   ],
   "author": "Olli Vanhoja <olli.vanhoja@gmail.com>",
-  "license": "ISC"
+  "license": "MIT",
+  "jest": {
+    "testMatch": [
+      "**/test/**/*.test.js"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "index.js"
+    ],
+    "verbose": true
+  }
 }
